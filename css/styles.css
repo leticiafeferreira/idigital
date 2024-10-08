@@ -1,11 +1,12 @@
 /*Fonts Geral*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif+Oriya:wght@400..700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 body{
-    font-family:"Merriweather", serife ; /* */
+    font-family:"Merriweather", serif ; /* */
     color:darkslategray ; /* */
-    background:rgba(250, 175, 175, 0.918) ; /* */
+    background:rgba(255, 255, 255, 0.918) ; /* */
 }
 a {
     text-decoration: none;
@@ -66,4 +67,84 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
     background: rgb(243, 121, 121);
     transition: all 0.3s;
+}
+
+/*fim Header*/
+#main {
+    margin-left: 300px;
+}
+
+.container,
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*Navigation Menu*/
+/*Desktop Navigation*/
+.nav-menu{
+    padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+    top: 70px;
+}
+
+.nav-menu a,
+.nav-menu a:focus{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 12px 15px;
+    margin-bottom: 1px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.nav-menu a i,
+.nav-menu a:focus {
+    font-size: 24px;
+    padding-right: 8px;
+    color: white;
+}
+
+.nav-menu a:hover ,
+.nav-menu .active,
+.nav-menu .active:focus
+.nav-menu li:hover>a{
+    text-decoration: none;
+    color: black;
+}
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+    color: rgb(0, 0, 0);
+}
+
+/*Mobile menu*/
+.mobile-nav-toggle{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    background: rgb(252, 99, 99);
+    color: white;
+    width: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
 }

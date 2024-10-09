@@ -148,3 +148,28 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50px;
     cursor: pointer;
 }
+
+.mobile-nav-active{
+    overflow: hidden;
+}
+
+.mobile-nav-active #header{
+    left: 0;
+}
+/* Resulução Mobile*/
+
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
